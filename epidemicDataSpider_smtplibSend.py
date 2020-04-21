@@ -5,7 +5,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.header import Header
 
-path = 'C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe'
+path = 'C:\******\chromedriver.exe'
 browser = webdriver.Chrome(path)#声明浏览器
 url = 'https://voice.baidu.com/act/newpneumonia/newpneumonia/?from=osari_pc_3'
 browser.get(url)#打开浏览器预设网址
@@ -49,13 +49,11 @@ str = str_time + '\n\r' + str_Chi + '\n\r' + str_for + '\n\r' + str_Ame
 print(str)
 # 第三方 SMTP 服务
 mail_host = "smtp.qq.com"       # 设置服务器
-mail_user = "29103302@qq.com"   # 用户名
-mail_pass = "woftrfbsskeubjed"  # 口令
+mail_user = "******@qq.com"   # 用户名
+mail_pass = "******"  # 口令
 
-sender = '29103302@qq.com'
-# receivers = ['1722060236@qq.com']  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
-# receivers = ['1802964179@qq.com']
-receivers = ['y29103302@126.com']
+sender = '******@qq.com'
+receivers = ['******@qq.com']# 接收邮件，可设置为你的QQ邮箱或者其他邮箱
 
 message = MIMEText(str, 'plain', 'utf-8')  #消息
 message['From'] = Header("python", 'utf-8')        #发件人
